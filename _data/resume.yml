@@ -44,15 +44,15 @@ main: #简历主要内容，
     - Java
   - title: 技能清单
     list:
-      - Python：深入了解， Java：熟练
-      - Linux ：shell, 开发，配置，底层：vim 掌握
-      - Django，flask，frappe ：掌握; tornado，sanic,了解
-      - 数据库：mysql, postgresql, mongodb, redis
-      - 队列框架：rq, celery, rabbitmq
-      - 网络服务：http， dubbo, restfulapi
-      - 运维及自动化：airflow , gitlab，Jenkins
-      - webserver：nginx:熟悉, apache了解
-      - 前端：html, jquery , jinja 熟练
+    - Python：深入了解， Java：熟练
+    - Linux ：shell, 开发，配置，底层：vim 掌握
+    - Django，flask，frappe ：掌握; tornado，sanic,了解
+    - 数据库：mysql, postgresql, mongodb, redis
+    - 队列框架：rq, celery, rabbitmq
+    - 网络服务：http， dubbo, restfulapi
+    - 运维及自动化：airflow , gitlab，Jenkins
+    - webserver：nginx:熟悉, apache了解
+    - 前端：html, jquery , jinja 熟练
 
 - type: experience
   name: 工作经验
@@ -61,7 +61,7 @@ main: #简历主要内容，
     sub: 深圳微言科技有限责任公司上海分公司
     duration: "2017年10月 - 2019年至今"
     tags:
-    - 标签
+    # - 标签
     summary: 
     detail: 负责数据路由项目和装修分期线上项目等项目的开发和维护工作
     # open: open
@@ -70,7 +70,7 @@ main: #简历主要内容，
     sub: 上海浙誉实业有限公司  
     duration: 2016年9月 - 2017年9月
     tags: 
-    - tagname
+    # - tagname
     # summary: Summary your job or work. (Collapse)
     detail: 负责网上商城的开发优化及运维
 
@@ -78,7 +78,7 @@ main: #简历主要内容，
     sub: 多点生活（中国）网络有限公司  
     duration: 2016年4月 - 2016年9月
     tags: 
-    - tagname
+    # - tagname
     summary: 
     detail: 负责公司Erp项目的开发
 
@@ -86,7 +86,7 @@ main: #简历主要内容，
     sub: 上海博达数据通信有限公司  
     duration: 2016年4月 - 2016年9月
     tags: 
-    - tagname
+    # - tagname
     # summary: Summary your job or work. (Collapse)
     detail: 负责博达云平台搭建工作
 
