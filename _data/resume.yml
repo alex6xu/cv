@@ -1,7 +1,7 @@
 # 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
 # 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
 
-title: "个人简历"
+title: "简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
 name: "许惠"
 jobtitle: "Python开发工程师" #可空不显示
@@ -42,10 +42,12 @@ main: #简历主要内容，
     items: #itmems 可以小块的方式显示
     - Python
     - Java
-  - title: 列表
-    list:
+#   - title: 列表
+#     list:
+#     - 2323
+#     - 333
   - title: 技能清单
-    list:
+    items:
     - Python：深入了解， Java：熟练
     - Linux ：shell, 开发，配置，底层：vim 掌握
     - Django，flask，frappe ：掌握; tornado，sanic,了解
@@ -71,6 +73,7 @@ main: #简历主要内容，
   - title: 高级开发工程师
     sub: 上海浙誉实业有限公司  
     duration: 2016年9月 - 2017年9月
+
     tags: 
     # - tagname
     # summary: Summary your job or work. (Collapse)
