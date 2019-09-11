@@ -1,25 +1,25 @@
 # 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
 # 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
 
-title: "简历标题"
+title: "个人简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
-name: "你的名字"
-jobtitle: "求职意向" #可空不显示
-photo: "assets/img/photo.jpg" #照片可空，不显示
+name: "许惠"
+jobtitle: "Python开发工程师" #可空不显示
+photo: "" #照片可空，不显示
 
 #联系方式
 contact: #联系方式连接等3~5行
-- text: "youremail@example.com" #文本内容
-  href: 'mailto:youremail@example.com' #链接，无链接则空  
+- text: "permike@163.com" #文本内容
+  href: 'mailto:permike@163.com' #链接，无链接则空  
   icon: 'icons/email.svg' #图标 svg文件
-- text: "1234567890"
-  href: 'tel:1234567890'
+- text: "13636439603"
+  href: 'tel:13636439603'
   icon: 'icons/phone.svg'
-- text: "your-website.com"
-  href: 'http://your-website.com'
+- text: "blog.alexuhui.win"
+  href: 'http://blog.alexuhui.win'
   icon: 'icons/web.svg'
-- text: "GitHubID"
-  href: 'https://github.com/NewFuture'
+- text: "alex6xu"
+  href: 'https://github.com/alex6xu'
   icon: "icons/github.svg"
   attr: 'target="_blank"' #新标签页打开
   # - text: "地址"
@@ -30,77 +30,113 @@ main: #简历主要内容，
 - type: education #类别为ID
   name: 教育 #显示名称，空则使用type
   content: #内容基本格式 标题-副标题-日期-详细内容 (都允许空)
-  - title: 大学名称
-    duration: "2011年x月 - 2015年"
-    sub: 地点或学历
-    detail: 专业或者简短说明
-  - title: Your University
-    duration: Aug 2007 - Jun 2011
-    sub: Ut enim ad minim veniam
-    detail: Master Bachelor of Computer Science & Technology.
+  - title: 上海海事大学
+    duration: "2013年9月 - 2015年"
+    sub: 硕士
+    detail: 软件工程专业
 
 - type: skills
-  # name: "技能"
+  name: "技能"
   content:
   - title: 编程语言
     items: #itmems 可以小块的方式显示
-    - 汉语
-    - 语言2
-    - 语言3
-  - title: Skill Group
-    summary: Consectetur, Adipiscing, Elit
+    - Python
+    - Java
+  - title: 技能清单
+    list:
+      - Python：深入了解， Java：熟练
+      - Linux ：shell, 开发，配置，底层：vim 掌握
+      - Django，flask，frappe ：掌握; tornado，sanic,了解
+      - 数据库：mysql, postgresql, mongodb, redis
+      - 队列框架：rq, celery, rabbitmq
+      - 网络服务：http， dubbo, restfulapi
+      - 运维及自动化：airflow , gitlab，Jenkins
+      - webserver：nginx:熟悉, apache了解
+      - 前端：html, jquery , jinja 熟练
 
 - type: experience
-  name: 经验
+  name: 工作经验
   content:
-  - title: 职位
-    sub: 某某公司
-    duration: "xxxx年xx月 - yyyy年yy月"
+  - title: 高级研发工程师
+    sub: 深圳微言科技有限责任公司上海分公司
+    duration: "2017年10月 - 2019年至今"
     tags:
     - 标签
-    summary: 职务或者工作总结(自动折叠)
-    detail: 同时包含 summary和detail在Chrome，Safari(包括IOS)，Android和新版Firefox等会自动折叠，不支持折叠的浏览器和展开后表现一致
+    summary: 
+    detail: 负责数据路由项目和装修分期线上项目等项目的开发和维护工作
     # open: open
     #可以设置open默认展开
-  - title: Job Title
-    sub: Your 2nd, Inc.  
-    duration: Apr 2013 - Mar 2016
+  - title: 高级开发工程师
+    sub: 上海浙誉实业有限公司  
+    duration: 2016年9月 - 2017年9月
     tags: 
     - tagname
-    summary: Summary your job or work. (Collapse)
-    detail: Details can be collapsed in Chrome Safari, Firefox, Opera and so on. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    # summary: Summary your job or work. (Collapse)
+    detail: 负责网上商城的开发优化及运维
+
+  - title: Python开发工程师
+    sub: 多点生活（中国）网络有限公司  
+    duration: 2016年4月 - 2016年9月
+    tags: 
+    - tagname
+    summary: 
+    detail: 负责公司Erp项目的开发
+
+  - title: 云平台开发工程师
+    sub: 上海博达数据通信有限公司  
+    duration: 2016年4月 - 2016年9月
+    tags: 
+    - tagname
+    # summary: Summary your job or work. (Collapse)
+    detail: 负责博达云平台搭建工作
 
 - type: projects
-  name: Projects
+  name: 项目经验
   content:
-  - title: 项目名称
-    duration: xxxx年xx月 - yyyy年yy月
-    detail: 项目和工作介绍，项目总结.
-    sub: 维护者
-  - title: Project Name
-    summary: Projects' introduction or summary
-    detail:
-      md: _data/demo.md
+  - title: 数据路由项目（Python）
+    # duration: xxxx年xx月 - yyyy年yy月
+    summary: flask + MySQL + celery + MongoDB + gnupg + supervisor
+    detail: 数据路由项目是微言内风控系统的数据平台接口，用来对接包括二三四要素，房价及反欺诈信息的平台，同时为引擎提供数据支撑的平台，该项目基于flask框架+MySQL+celery+MongoDB的框架开发，我在项目中负责项目整体框架的搭建，代码及输出格式的规范化制定，核心代码的开发和运维等工作。并对项目中出现的问题进行优化，最终使项目qps由15提高到130。并独立开发一套数据分析系统，为公司提供数据报表和分析系统。
+    sub: 开发维护者
+  - title: 装修分期平台（Java）
+    summary: centos + spring + dubbo + redis + mysql + mybatis
+    detail: 该系统是一个为立邦开发的线上装修分期平台。包括APP&H5后端，引擎，运营系统，计划核心系统，我负责项目开发中主要负责运营平台和装修后台的开发工作。项目开发工程中熟悉了主流的JAVA开发项目流程，对java项目开发有了深入的了解。开发后期对整个项目主要环节做了完整了解，并在项目完成上线后负责后期维护和更新工作。
     sub: Creator and maintainer.
    #可继续添加更多内容
+  - title: 贷款超市系统（Python）
+    # duration: xxxx年xx月 - yyyy年yy月
+    summary: flask-admin + mysql + jquery + weixin + alipay
+    detail: 是一款基于微信公众号和小程序的贷款分期项目，该项目基于flask-admin+mysql框架，集成到微信的公众号，提供贷款，保险，支付等功能，是一款多元化的公众号工具，我在项目中负责整体项目的开发工作，包括前后端机数据库的开发及调优。
+    sub: 开发维护者
+  - title: 光大洋箩筐商城(python)
+    duration: 
+    summary: docker + Django + gunicorn + postgres + memcached + rabbitmq
+    detail: 光大洋箩筐商城是光大银行和上海浙誉实业有限公司合作的网上商城项目。于2016年10月上线。该项目基于django框架开发，功能主要分为用户购买，供应商管理商品和定单，运营人员管理等。我的主要职责，开发：在项目负责物流接口的开发，促销功能的开发改造，购物车及结算功能的优化，2017年3月开始负责系统2.0的开发，包括更换系统模板，优化访问速度及系统并发性能等。运维：优化Nginx配置；安装zabbix对系统进行监测，预防系统出现硬件故障并能技术预警；给应用添加日志系统，保证出错是快速找到问题。对服务器添加ssl认证，更新Nginx配置设置全站HTTPS。
+    sub: 开发维护者
+  - title: ERP系统(python)
+    # duration: xxxx年xx月 - yyyy年yy月
+    summary: frappe + erpnext + mariadb + airflow + docker + gitlab + sentry
+    detail: 多点生活（中国）有限公司是一家新兴的生鲜o2o公司，在多地有研发团队，其中上海负责开发ERP系统，是连接实体店的线下业务和020线上业务的一个重要系统。国内属于第一家打通线上和线下的生鲜公司。多点ERP使用frappe框架下的ERPnext作为原型进行二次开发。需要同步SAP下发的数据，这部分是我负责的。以及其他系统设计和优化，重要功能都要我的参与。
+    sub: 开发维护者
+  - title: 博达云平台系统服务器研发项目(python)
+    # duration: xxxx年xx月 - yyyy年yy月
+    summary: Ubuntu server+django+freeradius+mysql+nginx+uwsgi
+    detail: 在工作中主要负责博达移动互联与云计算中心的服务端开发工作，以及相当多的销售项目支持工作。博达云平台主要是为了结合博达主要的网络硬件的销售，为客户提供一体化的WiFi接入解决方案，并提供后台设备管理，广告管理及数据分析的多样化功能。目前的云平台主要分为AC+AP的组网方式和wifidog组网方式。我的工作主要负责wifidog系统服务端框架设计与编码及后期优化，主要包括设备注册，用户登录，用户管理，用户数据统计等功能的开发(除了少量前端均个人开发）。支持的用户登录方式包括短信验证码和微信登录两种方式，同时还负责后期系统整合及测试工作，因此对整个系统的各个细节有较全面的了解。在开发的过程中还负责湖南农信，恩施邮储，梅斯医疗等等定制化项目的支持，为他们提供广告定制和数据统计的定制化服务，并保持系统良好的运行
+    sub: 开发维护者
 
 #others 其他简略内容(列表)
 others: #其他列表显示
 - type: others #ID可以为空
-  name: '其他'
+  name: "自我评价"
   content: #选择需要的格式
-  - 单行文字
-  - title: "加粗:"
-    text: "列表项二"
+  - 本人热爱编程相关工作，喜欢动手实践和探索，工作有责任感，有一定的创新精神。熟练使用python编程语言，熟悉和了解的框架有Django, flask, tornado等主流框架，熟悉多线程和异步网络编程，掌握web前后端,Mysql,monogdb,redis数据库等相关知识。对编程有系统的了解,掌握数据结构和算法，操作系统原理，网络协议，设计模式相关知识; 自学过golang，使用revel框架编写过个人blog项目；同时有一定了解Java拥有一些编程实践经验。熟悉Linux相关的底层开发和测试工作以及编译原理相关知识，熟练使用git进行团队开发，希望从事服务端开发的工作。
+  - 另外，性格开朗，有积极的心态，有上进心，做事有热情，工作中能吃苦耐劳，能承受较大压力。具有良好的沟通协作能力和学习能力。良好的理解能力和执行力，良好的自学能力、团队合作精神和较强的动手能力。荣获2015年上海博达数据通信有限公司云平台部门优秀员工奖。
   - title: "兴趣:"
     items: #单行列表
-    - 睡觉
-    - 吃饭
+    - 运动：篮球，羽毛球
     - coding
-  - title: 列表
-    list:
-    - 第一项
-    - 第二项
+  - title: 奖励
+    items: 博达数据通讯有限公司2015年优秀员工
 #- type: 
 #  name: '其他'
 #  content: #选择需要的格式
@@ -111,10 +147,10 @@ others: #其他列表显示
 footer: #脚注多组
   print: #打印版markdown或者html
   screen:
-  - text: "简历脚注"
+  - text: "许惠的简历"
   #   href: '/'
-  - text: "Made with &hearts; by NewFuture"
-    href: "https://github.com/NewFuture/CV/"
+  - text: "Made with &hearts; by Alex"
+    href: "https://alex6xu.github.io/cv/"
 
 #页面额外js脚本，如xx统计
 scripts:
