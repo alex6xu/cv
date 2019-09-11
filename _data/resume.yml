@@ -1,7 +1,7 @@
 # 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
 # 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
 
-title: "个人简历"
+title: "简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
 name: "许惠"
 jobtitle: "Python开发工程师" #可空不显示
@@ -31,7 +31,7 @@ main: #简历主要内容，
   name: 教育 #显示名称，空则使用type
   content: #内容基本格式 标题-副标题-日期-详细内容 (都允许空)
   - title: 上海海事大学
-    duration: "2013年9月 - 2015年"
+    duration: "2013年9月 - 2015年7月"
     sub: 硕士
     detail: 软件工程专业
 
@@ -42,8 +42,12 @@ main: #简历主要内容，
     items: #itmems 可以小块的方式显示
     - Python
     - Java
-  - title: 技能清单
+  - title: 列表
     list:
+    - 2323
+    - 333
+  - title: 技能清单
+    items:
     - Python：深入了解， Java：熟练
     - Linux ：shell, 开发，配置，底层：vim 掌握
     - Django，flask，frappe ：掌握; tornado，sanic,了解
@@ -132,9 +136,10 @@ others: #其他列表显示
   - 本人热爱编程相关工作，喜欢动手实践和探索，工作有责任感，有一定的创新精神。熟练使用python编程语言，熟悉和了解的框架有Django, flask, tornado等主流框架，熟悉多线程和异步网络编程，掌握web前后端,Mysql,monogdb,redis数据库等相关知识。对编程有系统的了解,掌握数据结构和算法，操作系统原理，网络协议，设计模式相关知识; 自学过golang，使用revel框架编写过个人blog项目；同时有一定了解Java拥有一些编程实践经验。熟悉Linux相关的底层开发和测试工作以及编译原理相关知识，熟练使用git进行团队开发，希望从事服务端开发的工作。
   - 另外，性格开朗，有积极的心态，有上进心，做事有热情，工作中能吃苦耐劳，能承受较大压力。具有良好的沟通协作能力和学习能力。良好的理解能力和执行力，良好的自学能力、团队合作精神和较强的动手能力。荣获2015年上海博达数据通信有限公司云平台部门优秀员工奖。
   - title: "兴趣:"
-    items: #单行列表
+    list: #单行列表
     - 运动：篮球，羽毛球
     - coding
+    - 阅读
   - title: 奖励
     items: 博达数据通讯有限公司2015年优秀员工
 #- type: 
