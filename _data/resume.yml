@@ -4,7 +4,7 @@
 title: "简历"
 lang: "zh" #语言设置 zh表示中文 en 表示英语
 name: "许惠"
-jobtitle: "Python开发工程师" #可空不显示
+jobtitle: "后端开发工程师" #可空不显示
 photo: "" #照片可空，不显示
 
 #联系方式
@@ -106,7 +106,7 @@ main: #简历主要内容，
   - title: 装修分期平台（Java）
     summary: centos + spring + dubbo + redis + mysql + mybatis
     detail: 该系统是一个为立邦开发的线上装修分期平台。包括APP&H5后端，引擎，运营系统，计划核心系统，我负责项目开发中主要负责运营平台和装修后台的开发工作。项目开发工程中熟悉了主流的JAVA开发项目流程，对java项目开发有了深入的了解。开发后期对整个项目主要环节做了完整了解，并在项目完成上线后负责后期维护和更新工作。
-    sub: Creator and maintainer.
+    sub: 开发维护者
    #可继续添加更多内容
   - title: 贷款超市系统（Python）
     # duration: xxxx年xx月 - yyyy年yy月
