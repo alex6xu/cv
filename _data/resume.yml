@@ -22,8 +22,8 @@ contact: #联系方式连接等3~5行
   href: 'https://github.com/alex6xu'
   icon: "icons/github.svg"
   attr: 'target="_blank"' #新标签页打开
-# - text: ""
-  # icon: "icons/wechat.svg"
+- text: "permike"
+  icon: "icons/wechat.svg"
 
 #main下面是主体内容，类别条数不限
 main: #简历主要内容，
@@ -55,8 +55,8 @@ main: #简历主要内容，
     - Python：深入了解， Java：熟练
     - Linux ：shell, 开发，配置，底层：vim 掌握
     - Django，flask，frappe ：掌握; tornado，sanic,了解
-    - 数据库：mysql, postgresql, mongodb, redis
-    - 队列框架：rq, celery, rabbitmq
+    - 数据库：mysql, mongodb, redis，postgresql
+    - 队列框架：celery, rabbitmq, rq
     - 网络服务：http， dubbo, restfulapi
     - 运维及自动化：airflow , gitlab，Jenkins
     - webserver：nginx:熟悉, apache了解
@@ -93,7 +93,7 @@ main: #简历主要内容，
 
   - title: 云平台开发工程师
     sub: 上海博达数据通信有限公司  
-    duration: 2016年4月 - 2016年9月
+    duration: 2015年5月 - 2016年4月
     tags: 
     # - tagname
     # summary: Summary your job or work. (Collapse)
